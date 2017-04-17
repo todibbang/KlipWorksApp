@@ -1,0 +1,4 @@
+/Users/macbookpro/Projects/KlipWorksApp/KlipWorksApp/obj/iPhone/Debug/device-builds/iphone7.2-10.2/mtouch-cache/Link/Xamarin.iOS.dll
+/Users/macbookpro/Projects/KlipWorksApp/KlipWorksApp/obj/iPhone/Debug/device-builds/iphone7.2-10.2/mtouch-cache/Link/mscorlib.dll
+/Users/macbookpro/Projects/KlipWorksApp/KlipWorksApp/obj/iPhone/Debug/device-builds/iphone7.2-10.2/mtouch-cache/Link/KlipWorksApp.exe
+/Users/macbookpro/Projects/KlipWorksApp/KlipWorksApp/obj/iPhone/Debug/device-builds/iphone7.2-10.2/mtouch-cache/Link/System.dll
