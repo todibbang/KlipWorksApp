@@ -18,6 +18,12 @@ namespace KlipWorksApp
 		public void UpdateCell(ShotList shotList, int index)
 		{
 			Name.Text = shotList.ShotItems[index];
+			Status.On = shotList.ShotStates[index];
+
+			Status.TouchUpInside += (sender, e) =>
+			{
+				shotList.ShotStates[index] = Status.On;
+			};
 		} 
     }
 }

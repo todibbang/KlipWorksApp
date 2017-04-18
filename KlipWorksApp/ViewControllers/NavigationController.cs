@@ -21,7 +21,6 @@ namespace KlipWorksApp
 		{
 			if (value.push)
 			{
-
 				PushViewController(value.viewController, true);
 				value.push = false;
 			}

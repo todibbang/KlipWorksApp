@@ -18,7 +18,7 @@ namespace KlipWorksApp
 		public UIViewController viewController;
 		public VideoProject inspectedVideoProject;
 
-
+		public bool menuOpen;
 		//public string timeEllapsed;
 		private UILabel timerLabel;
 
@@ -30,9 +30,21 @@ namespace KlipWorksApp
 			klips = new List<Klip>();
 			for (int i = 0; i < 10; i++)
 			{
-				videoProjects.Add(new VideoProject("Test project " + i, i%4));
-				TimeSpan timeSpan = new TimeSpan(0,7*i, 5*i);
-				klips.Add(new Klip("test_klip_" + i, timeSpan));
+
+				List<Klip> projectKlips = new List<Klip>();
+				ShotList projectShotList = new ShotList();
+				List<string> projectShotListItems = new List<string>();
+				TimeSpan timeSpan = new TimeSpan(0, 7 * i, 5*i);
+				for (int j = 0; j < 5; j++)
+				{
+					projectKlips.Add(new Klip("project_" + i + "_klip_" + j, "Test hehe description", timeSpan));
+					projectShotList.ShotItems.Add("ShotItem_"+i);
+					projectShotList.ShotStates.Add(false);
+				}
+
+				videoProjects.Add(new VideoProject("Test project " + i, i%4, projectKlips, projectShotList));
+
+				klips.Add(new Klip("test_klip_" + i, "Test hehe description", timeSpan));
 			}
 		}
 
@@ -99,6 +111,7 @@ namespace KlipWorksApp
 		public void setInspectedVideoProject(VideoProject vp)
 		{
 			inspectedVideoProject = vp;
+            update();
 		}
 
 		private void update() {

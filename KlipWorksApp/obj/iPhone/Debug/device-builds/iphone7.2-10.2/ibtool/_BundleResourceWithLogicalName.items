@@ -17,10 +17,6 @@
       <LogicalName>Main.storyboardc/1121-view-1122.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone7.2-10.2/ibtool-link/Main.storyboardc/61-view-63.nib">
-      <LogicalName>Main.storyboardc/61-view-63.nib</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone7.2-10.2/ibtool-link/Main.storyboardc/9Y0-53-eNO-view-uha-Qg-MJi.nib">
       <LogicalName>Main.storyboardc/9Y0-53-eNO-view-uha-Qg-MJi.nib</LogicalName>
       <Optimize>false</Optimize>
@@ -51,10 +47,6 @@
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone7.2-10.2/ibtool-link/Main.storyboardc/UITableViewController-1121.nib">
       <LogicalName>Main.storyboardc/UITableViewController-1121.nib</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone7.2-10.2/ibtool-link/Main.storyboardc/UIViewController-61.nib">
-      <LogicalName>Main.storyboardc/UIViewController-61.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone7.2-10.2/ibtool-link/Main.storyboardc/UIViewController-BYZ-38-t0r.nib">

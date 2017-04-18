@@ -18,7 +18,7 @@ namespace KlipWorksApp
 		public void UpdateCell(VideoProject project)
 		{
 			Name.Text = project.name;
-			Status.BackgroundColor = UIColor.Red;
+			Status.BackgroundColor = VideoProject.getProjectStateColor(project);
 			Update.TouchUpInside += (sender, e) =>
 			{
 				System.Diagnostics.Debug.WriteLine("Update project!!!!!!!");

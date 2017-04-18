@@ -26,6 +26,10 @@ namespace KlipWorksApp
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton InterviewButton { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton NoCaptureModeButton { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
             if (CloseButton != null) {
@@ -41,6 +45,11 @@ namespace KlipWorksApp
             if (InterviewButton != null) {
                 InterviewButton.Dispose ();
                 InterviewButton = null;
+            }
+
+            if (NoCaptureModeButton != null) {
+                NoCaptureModeButton.Dispose ();
+                NoCaptureModeButton = null;
             }
         }
     }

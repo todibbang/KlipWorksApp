@@ -34,6 +34,10 @@ namespace KlipWorksApp
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton StatusButton { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton Update { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
             if (InspectSegment != null) {
@@ -59,6 +63,11 @@ namespace KlipWorksApp
             if (StatusButton != null) {
                 StatusButton.Dispose ();
                 StatusButton = null;
+            }
+
+            if (Update != null) {
+                Update.Dispose ();
+                Update = null;
             }
         }
     }

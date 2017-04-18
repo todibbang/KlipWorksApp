@@ -15,20 +15,29 @@ namespace KlipWorksApp
 		public override void ViewDidLoad()
 		{
 			base.ViewDidLoad();
-			TabelView.Source = new TableSource(this, AppDelegate.model.getVideoProjects());
+			TableView.Source = new TableSource(this, AppDelegate.model.getVideoProjects());
+		}
+
+		public override void ViewDidAppear(bool animated)
+		{
+			base.ViewDidAppear(animated);
+			AppDelegate.model.inspectedVideoProject = null;
 		}
 
 		public void pushView(VideoProject videoProject)
 		{
-			var detail = Storyboard.InstantiateViewController("InspectVideoProject") as InspectVideoProjectViewController;
 			AppDelegate.model.setInspectedVideoProject(videoProject);
-			AppDelegate.model.pushViewController(detail);
+			if (AppDelegate.model.menuOpen)
+			{
+				var detail = Storyboard.InstantiateViewController("InspectVideoProject") as InspectVideoProjectViewController;
+				AppDelegate.model.pushViewController(detail);
+			}
 		}
 
 		private class TableSource : UITableViewSource
 		{
 			List<VideoProject> TableItems;
-			string CellIdentifier = "TableCell";
+			string CellIdentifier = "ProjectCell";
 			ProjectsListController projectsListController;
 
 			public TableSource(ProjectsListController projectsListController, List<VideoProject> items)
@@ -40,11 +49,11 @@ namespace KlipWorksApp
 			public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
 			{
 
-				UITableViewCell cell = tableView.DequeueReusableCell(CellIdentifier);
+				ProjectTableCell cell = (ProjectTableCell)tableView.DequeueReusableCell(CellIdentifier);
 				VideoProject item = TableItems[indexPath.Row];
 
-	            if (cell == null) cell = new UITableViewCell();
-				cell.TextLabel.Text = item.name;
+	            if (cell == null) cell = new ProjectTableCell(new NSString(CellIdentifier));
+				cell.UpdateCell(item);
 
 	            return cell;
 			}

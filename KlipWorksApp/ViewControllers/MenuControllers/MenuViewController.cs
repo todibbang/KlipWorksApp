@@ -15,12 +15,13 @@ namespace KlipWorksApp
 		{
 			base.ViewWillAppear(animated);
 			NavigationController.NavigationBarHidden = true;
+			AppDelegate.model.menuOpen = true;
 		}
 
 		public override void ViewDidLoad()
 		{
 			base.ViewDidLoad();
-
+            this.Title = "Menu";
 			ProjectsSegment.ValueChanged += (sender, e) => {
 
 				switch (ProjectsSegment.SelectedSegment)

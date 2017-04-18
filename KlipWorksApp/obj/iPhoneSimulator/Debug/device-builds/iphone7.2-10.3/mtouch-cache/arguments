@@ -2,9 +2,9 @@
 # [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/10.8.0.175/lib/mtouch/mtouch.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/10.8.0.175/lib/mtouch/mtouch.exe \
 	--cache \
-	/Users/macbookpro/Projects/KlipWorksApp/KlipWorksApp/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/mtouch-cache \
+	/Users/tobiasbang/Documents/Projects/KlipWorksApp/KlipWorksApp/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/mtouch-cache \
 	--sim \
-	/Users/macbookpro/Projects/KlipWorksApp/KlipWorksApp/bin/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/KlipWorksApp.app \
+	/Users/tobiasbang/Documents/Projects/KlipWorksApp/KlipWorksApp/bin/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/KlipWorksApp.app \
 	--executable \
 	KlipWorksApp \
 	--fastdev \
@@ -19,7 +19,7 @@
 	--http-message-handler=HttpClientHandler \
 	--abi=x86_64 \
 	--symbollist \
-	/Users/macbookpro/Projects/KlipWorksApp/KlipWorksApp/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/mtouch-symbols.list \
+	/Users/tobiasbang/Documents/Projects/KlipWorksApp/KlipWorksApp/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/mtouch-symbols.list \
 	--dsym=no \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
@@ -33,4 +33,4 @@
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
-	/Users/macbookpro/Projects/KlipWorksApp/KlipWorksApp/bin/iPhoneSimulator/Debug/KlipWorksApp.exe \
+	/Users/tobiasbang/Documents/Projects/KlipWorksApp/KlipWorksApp/bin/iPhoneSimulator/Debug/KlipWorksApp.exe \

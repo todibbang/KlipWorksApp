@@ -16,13 +16,13 @@ namespace KlipWorksApp
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITableView TabelView { get; set; }
+        UIKit.UITableView TableView { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (TabelView != null) {
-                TabelView.Dispose ();
-                TabelView = null;
+            if (TableView != null) {
+                TableView.Dispose ();
+                TableView = null;
             }
         }
     }

@@ -48,6 +48,10 @@ namespace KlipWorksApp
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView ShotListContainer { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel TimerLabel { get; set; }
 
         void ReleaseDesignerOutlets ()
@@ -90,6 +94,11 @@ namespace KlipWorksApp
             if (ShotListButton != null) {
                 ShotListButton.Dispose ();
                 ShotListButton = null;
+            }
+
+            if (ShotListContainer != null) {
+                ShotListContainer.Dispose ();
+                ShotListContainer = null;
             }
 
             if (TimerLabel != null) {

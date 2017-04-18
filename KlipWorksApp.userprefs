@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{00FFD1A4-20FD-439D-9CBD-439A39516383}|Default">
-  <MonoDevelop.Ide.ItemProperties.KlipWorksApp PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D7AFFA05-FF46-4E27-B487-76116709D553" />
+  <MonoDevelop.Ide.ItemProperties.KlipWorksApp PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.358acde7fcd3f7716f584c06d9d4a4bb85960455" />
   <MonoDevelop.Ide.Workbench />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

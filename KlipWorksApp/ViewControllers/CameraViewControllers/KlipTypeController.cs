@@ -15,6 +15,9 @@ namespace KlipWorksApp
 		{
 			base.ViewDidLoad();
 
+			//CloseButton.Layer.BorderWidth = 1;
+			//CloseButton.Layer.CornerRadius = 5;
+
 			InterviewButton.TouchUpInside += (sender, e) =>
 			{
 				AppDelegate.model.setCaptureMode(Model.CaptureMode.Interview);
@@ -25,9 +28,14 @@ namespace KlipWorksApp
 				AppDelegate.model.setCaptureMode(Model.CaptureMode.CoverShot);
 			};
 
-			CloseButton.TouchUpInside += (sender, e) =>
+			NoCaptureModeButton.TouchUpInside += (sender, e) =>
 			{
 				AppDelegate.model.setCaptureMode(Model.CaptureMode.None);
+			};
+
+			CloseButton.TouchUpInside += (sender, e) =>
+			{
+				AppDelegate.model.setCaptureMode(AppDelegate.model.captureMode);
 			};
 		}
     }

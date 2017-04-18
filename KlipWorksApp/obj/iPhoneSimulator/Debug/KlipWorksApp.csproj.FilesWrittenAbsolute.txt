@@ -19,3 +19,10 @@
 /Users/macbookpro/Projects/KlipWorksApp/KlipWorksApp/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/actool/_PartialAppManifest.items
 /Users/macbookpro/Projects/KlipWorksApp/KlipWorksApp/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/actool/_BundleResourceWithLogicalName.items
 /Users/macbookpro/Projects/KlipWorksApp/KlipWorksApp/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/optimized/
+/Users/tobiasbang/Documents/Projects/KlipWorksApp/KlipWorksApp/obj/iPhoneSimulator/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/tobiasbang/Documents/Projects/KlipWorksApp/KlipWorksApp/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/optimized/
+/Users/tobiasbang/Documents/Projects/KlipWorksApp/KlipWorksApp/bin/iPhoneSimulator/Debug/KlipWorksApp.exe.mdb
+/Users/tobiasbang/Documents/Projects/KlipWorksApp/KlipWorksApp/bin/iPhoneSimulator/Debug/KlipWorksApp.exe
+/Users/tobiasbang/Documents/Projects/KlipWorksApp/KlipWorksApp/obj/iPhoneSimulator/Debug/KlipWorksApp.exe
+/Users/tobiasbang/Documents/Projects/KlipWorksApp/KlipWorksApp/obj/iPhoneSimulator/Debug/KlipWorksApp.exe.mdb
+/Users/tobiasbang/Documents/Projects/KlipWorksApp/KlipWorksApp/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3/ibtool/_BundleResourceWithLogicalName.items

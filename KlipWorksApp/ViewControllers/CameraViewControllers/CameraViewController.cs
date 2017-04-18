@@ -20,26 +20,32 @@ namespace KlipWorksApp
 		{
 			base.ViewWillAppear(animated);
 			NavigationController.NavigationBarHidden = true;
+			AppDelegate.model.menuOpen = false;
 		}
 
 		public override void ViewDidLoad()
 		{
 			base.ViewDidLoad();
 
-
-
-
-
-
-
 			KlipTypeButton.TouchUpInside += (sender, e) =>
 			{
 				KlipTypePickerContainer.Hidden = !KlipTypePickerContainer.Hidden;
+				SelectProjectContainer.Hidden = true;
+				ShotListContainer.Hidden = true;
 			};
 
 			ProjectNameButton.TouchUpInside += (sender, e) =>
 			{
+				KlipTypePickerContainer.Hidden = true;
 				SelectProjectContainer.Hidden = !SelectProjectContainer.Hidden;
+				ShotListContainer.Hidden = true;
+			};
+
+			ShotListButton.TouchUpInside += (sender, e) =>
+			{
+				KlipTypePickerContainer.Hidden = true;
+				SelectProjectContainer.Hidden = true;
+				ShotListContainer.Hidden = !ShotListContainer.Hidden;
 			};
 
 
@@ -83,9 +89,15 @@ namespace KlipWorksApp
 		public void OnNext(Model value)
 		{
 			KlipTypePickerContainer.Hidden = true;
+			SelectProjectContainer.Hidden = true;
+			ShotListContainer.Hidden = true;
 			if(value.captureMode == Model.CaptureMode.Interview)	KlipTypeButton.SetTitle("Interview", UIControlState.Normal);
 			if(value.captureMode == Model.CaptureMode.CoverShot)	KlipTypeButton.SetTitle("Cover Shot", UIControlState.Normal);
 			if(value.captureMode == Model.CaptureMode.None)			KlipTypeButton.SetTitle("No capture mode selected", UIControlState.Normal);
+
+			if (value.inspectedVideoProject == null) ProjectNameButton.SetTitle("No project selected", UIControlState.Normal);
+			else ProjectNameButton.SetTitle(value.inspectedVideoProject.name, UIControlState.Normal);
+
 			//TimerLabel.Text = value.timeEllapsed;
 			if (!value.recording) TimerLabel.Text = "00:00:00";
 		}

@@ -92,6 +92,7 @@
     <Folder Include="ViewControllers\" />
     <Folder Include="ViewControllers\CameraViewControllers\" />
     <Folder Include="ViewControllers\MenuControllers\" />
+    <Folder Include="ViewControllers\TableCellControllers\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -128,10 +129,6 @@
     <Compile Include="ViewControllers\CameraViewControllers\KlipTypeController.designer.cs">
       <DependentUpon>KlipTypeController.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewControllers\CameraViewControllers\SelectProjectController.cs" />
-    <Compile Include="ViewControllers\CameraViewControllers\SelectProjectController.designer.cs">
-      <DependentUpon>SelectProjectController.cs</DependentUpon>
-    </Compile>
     <Compile Include="ViewControllers\MenuControllers\InspectVideoProjectViewController.cs" />
     <Compile Include="ViewControllers\MenuControllers\InspectVideoProjectViewController.designer.cs">
       <DependentUpon>InspectVideoProjectViewController.cs</DependentUpon>
@@ -149,6 +146,22 @@
       <DependentUpon>ProjectsListController.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\ShotList.cs" />
+    <Compile Include="ViewControllers\MenuControllers\ShotListController.cs" />
+    <Compile Include="ViewControllers\MenuControllers\ShotListController.designer.cs">
+      <DependentUpon>ShotListController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\TableCellControllers\ClipTableCell.cs" />
+    <Compile Include="ViewControllers\TableCellControllers\ClipTableCell.designer.cs">
+      <DependentUpon>ClipTableCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\TableCellControllers\ProjectTableCell.cs" />
+    <Compile Include="ViewControllers\TableCellControllers\ProjectTableCell.designer.cs">
+      <DependentUpon>ProjectTableCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\TableCellControllers\ShotListTableCell.cs" />
+    <Compile Include="ViewControllers\TableCellControllers\ShotListTableCell.designer.cs">
+      <DependentUpon>ShotListTableCell.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

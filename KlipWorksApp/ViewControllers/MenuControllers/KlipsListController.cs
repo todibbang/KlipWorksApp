@@ -15,13 +15,14 @@ namespace KlipWorksApp
 		public override void ViewDidLoad()
 		{
 			base.ViewDidLoad();
-			TabelView.Source = new TableSource(this, AppDelegate.model.getKlips());
+			if(AppDelegate.model.inspectedVideoProject == null) TableView.Source = new TableSource(this, AppDelegate.model.getKlips());
+			else TableView.Source = new TableSource(this, AppDelegate.model.inspectedVideoProject.klips);
 		}
 
 		private class TableSource : UITableViewSource
 		{
 			List<Klip> TableItems;
-			string CellIdentifier = "TableCell";
+			string CellIdentifier = "ClipCell";
 			KlipsListController projectsListController;
 
 			public TableSource(KlipsListController projectsListController, List<Klip> items)
@@ -33,11 +34,11 @@ namespace KlipWorksApp
 			public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
 			{
 
-				UITableViewCell cell = tableView.DequeueReusableCell(CellIdentifier);
+				ClipTableCell cell = (ClipTableCell) tableView.DequeueReusableCell(CellIdentifier);
 				Klip item = TableItems[indexPath.Row];
 
-				if (cell == null) cell = new UITableViewCell();
-				cell.TextLabel.Text = item.name + ", " + item.duration.ToString("hh\\:mm\\:ss");
+				if (cell == null) cell = new ClipTableCell(new NSString(CellIdentifier));
+				cell.UpdateCell(item);
 
 				return cell;
 			}

@@ -12,25 +12,14 @@ namespace KlipWorksApp
 
 		public override void ViewDidLoad()
 		{
-			base.ViewDidLoad();
-			NavigationController.NavigationBarHidden = false;
 			videoProject = AppDelegate.model.inspectedVideoProject;
-			NameLabel.Text = videoProject.name;
-			switch (videoProject.status){
-				case 0:
-					StatusButton.BackgroundColor = UIColor.Red;
-					break;
-				case 1:
-					StatusButton.BackgroundColor = UIColor.Yellow;
-					break;
-				case 2:
-					StatusButton.BackgroundColor = UIColor.Green;
-					break;
-				case 3:
-					StatusButton.BackgroundColor = UIColor.Blue;
-					break;
-			}
+			base.ViewDidLoad();
+            this.Title = videoProject.name;
+			NavigationController.NavigationBarHidden = false;
 
+
+			NameLabel.Text = videoProject.name;
+			StatusButton.BackgroundColor = VideoProject.getProjectStateColor(videoProject);
 
 			InspectSegment.ValueChanged += (sender, e) => {
 
