@@ -11,11 +11,19 @@ using UIKit;
 
 namespace KlipWorksApp
 {
-    [Register ("SelectProjectController")]
-    partial class SelectProjectController
+    [Register ("ShotListController")]
+    partial class ShotListController
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView TabelView { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (TabelView != null) {
+                TabelView.Dispose ();
+                TabelView = null;
+            }
         }
     }
 }
