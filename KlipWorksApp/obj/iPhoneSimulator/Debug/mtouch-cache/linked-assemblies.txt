@@ -1,4 +1,0 @@
-/Users/macbookpro/Projects/KlipWorksApp/KlipWorksApp/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-/Users/macbookpro/Projects/KlipWorksApp/KlipWorksApp/obj/iPhoneSimulator/Debug/mtouch-cache/Link/mscorlib.dll
-/Users/macbookpro/Projects/KlipWorksApp/KlipWorksApp/obj/iPhoneSimulator/Debug/mtouch-cache/Link/KlipWorksApp.exe
-/Users/macbookpro/Projects/KlipWorksApp/KlipWorksApp/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.dll
